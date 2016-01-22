@@ -1,0 +1,22 @@
+branches:
+  only:
+  - master
+language: python
+python:
+- 3.4
+install:
+- pip install -r requirements.txt --use-mirrors
+script:
+- make html
+notifications:
+  email:
+    on_success: always
+    on_failure: always
+env:
+  global:
+  - secure: W9jdJcVLMok2QnSWn94bkBZL6yiP88paWBSQvj5pNwx6rMA/KAuAmEDTmxWCRpvte9CP1mTpPgNRwn7UhhmZsw4f1AKEAClxNbpbVUhiISW+LoVmlkhw//fp+qGplhun2ID9sJpfjsgun5Ue4+dcpvI2rHP17lC5ZgJBj3fx85M=
+  - secure: EuleRVAaoed/C7mn6swpagRyfCf/ffhvavamXpqAx2KnbnAY1HX9sRFO8E2zCnjLLLz6ShgoWSNA4cloFnCbX41XbOnPXuUJkyBrV61X4twvVOcoDw/w2KVZfyhJ9umU5Ci4rr8kkGgIw8RPu8hFXP/0vVCk/I43t2K0KDshXrs=
+  - secure: ucrl33U5Qt8QVWxjIIuWcbpJGw4t+uMpU2eQLyB2hHmbX5vAg2vhc03Ai7R0YeNt0c/dULKBzx37lzHRnHvxBl08T9J1AKYZGR3s2sKr81/giHu9OQkMm60uF0EIJ0bvDL0sH32O0afcXlsAJFR6JPQuuZ50Ig8DpYazOMtWCK/8ynfxOe8JHqlvi6tvJmG/fPc2r3r2+44paJzRZSn+V0zeaHsVzZnWA1Pb+hh8isXGjM8rsVqLDFaT6/+lfKlnSRsEAr4dqjoif7PxlaWZWCPGnc7iqy0zyaHs53I3QQEpWNgKm5SDsD43zCmFIuYWSDtWK80Y1j4khHj05Z0HdNBEIUZD0iHm2fI9W9GijFKqcRpZEWaov9Zb/9lChanhZx3a61/aCc/Wz9qjUe2swLzRveMTSkQ10VLFrP80Qsc79BogK0sgT9n7PcvxB3/5OJlEjNT6Aq7/T7yobyjrNfJgVtqSnYM7xEBqUWkr1ZY3pdu4F5E3p4R7uI3IaJ3PI+gpsOA1G2PI0AoJzC0PvZrMkOVWx3ZnUDl6Qb+CuYRPFFFYpwZMArLXNNxkSzEwGi1M7e0g/nHHUEgC4fmz2v8rPHr9E/hKaOryk6n4YSXIz5llUXxLp7FZVtfyoGtOBbSNdy9SweStoQGCKeMgotZNJtakRE26OVVxegqaY2o=
+before_install:
+- git submodule update --init --recursive
+after_success: bash deploy.sh
