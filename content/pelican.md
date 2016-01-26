@@ -13,7 +13,7 @@ Bom, o meu objetivo com esse cara era criar um blog usando o [Github Pages][gith
 
 Então, me aventurei na web e logo encontrei posts muito legais, tais como o do [Arthur Alves][arthur] que me deu um bom passo-a-passo e uma visão sobre a ferramenta. E como usei o post dele como base, nada mais justo do que incentivar o uso do material que ele preparou.
 
-Mas minhas brincadeiras não pararam por aí. Como eu queria deixar meus deploys de forma automática parti para o [Travis CI][travis], um velhinho bigodudo que faz [integração contínua][ci]. No próximo post vou falar um pouco do que fiz nesse cara. Dessa vez vai dar pra compartilhar alguma coisa de código (mas nada tão complexo).
+Mas minhas brincadeiras não pararam por aí. Como eu queria deixar meus deploys de forma automática parti para o [Travis CI][travis], um velhinho bigodudo que faz [integração contínua][ci], mergulhei de cabeça nessa ideia e no próximo post vou falar um pouco do que fiz nesse cara. Dessa vez vai dar pra compartilhar alguma coisa de código (mas nada tão complexo).
 
 Então é isso, Até o próximo post.
 
