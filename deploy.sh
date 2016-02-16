@@ -25,6 +25,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     git add -f .
     echo -e "git commit -m Travis build $TRAVIS_BUILD_NUMBER pushed to Github Pages"
     git commit -m "Travis build $TRAVIS_BUILD_NUMBER pushed to Github Pages"
+    echo -e "git push -fq origin $BRANCH > /dev/null"
     git push -fq origin $BRANCH > /dev/null
     echo -e "Deploy completed\n"
 fi
