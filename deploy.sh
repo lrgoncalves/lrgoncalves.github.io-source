@@ -1,5 +1,7 @@
 #!/bin/bash
 # See https://medium.com/@nthgergo/publishing-gh-pages-with-travis-ci-53a8270e87db
+GITHUB_REPO=lrgoncalves/lrgoncalves.github.io
+#git@github.com:lrgoncalves/lrgoncalves.github.io.git
 set -o errexit
 
 rm -rf public
